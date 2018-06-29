@@ -1,0 +1,38 @@
+.technologies {
+  padding: 2rem 0;
+}
+
+.technologies__list {
+  list-style-type: none;
+  padding: 0.5rem 0;
+}
+
+.technology {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin: {
+    top: 1.2rem;
+    bottom: 1.2rem;
+  }
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: $primary-color;
+    border-radius: 50%;
+    margin: {
+      left: 0.5rem;
+      right: 0.8rem;
+    }
+  }
+}
+
+.technology__link {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: underline;
+  }
+}

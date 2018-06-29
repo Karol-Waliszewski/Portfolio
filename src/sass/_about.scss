@@ -1,0 +1,25 @@
+.about {
+  padding: calc(40px + 2vh) 0;
+}
+
+.about__image {
+  background-color: #E8E8E8;
+  height: calc(300px + 2vh);
+  overflow: hidden;
+
+}
+
+.about__text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: calc(100% - 80px);
+  margin-bottom: 2rem;
+  @media only screen and (max-width: 767px) {
+    height: auto;
+
+    p {
+      margin: 0.8rem 0;
+    }
+  }
+}

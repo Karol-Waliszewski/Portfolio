@@ -1,0 +1,132 @@
+.nav {
+  position: fixed;
+  height: $nav-height;
+  width: 0;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  @media only screen and (max-width: 768px) {
+    height: 100vh;
+
+    &.active {
+      .nav__content {
+        transform: translateX(0);
+        width: $nav-width-mobile;
+      }
+    }
+  }
+  @media only screen and (min-width: 769px) {
+    transition: $nav-transition;
+
+    &.active {
+      width: 100%;
+    }
+  }
+}
+
+.nav__content {
+  width: 100%;
+  padding-right: 0.5rem;
+  height: $nav-height;
+  overflow: hidden;
+  transition: $nav-transition;
+  background: $primary-color;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  @media only screen and (max-width: 768px) {
+    height: 100vh;
+    transform: translateX(-110vw);
+  }
+}
+
+.nav__button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  width: 50px;
+  height: 100%;
+  background: $primary-color;
+  border: none;
+  cursor: pointer;
+  transition: 250ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 0;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  }
+
+  &.active {
+    &:focus,
+    &:hover {
+      box-shadow: none;
+    }
+
+    span {
+      &:first-child {
+        position: absolute;
+        transform: rotate(225deg);
+      }
+
+      &:last-child {
+        position: absolute;
+        transform: rotate(315deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+  span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: $text-color;
+    transition: $nav-transition;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 45px;
+    height: $nav-height-mobile;
+    padding: 5px 0;
+  }
+}
+
+.nav__links {
+  display: flex;
+  @media only screen and (min-width: 769px) {
+    height: $nav-height;
+    float: right;
+    align-items: center;
+  }
+  @media only screen and (max-width: 768px) {
+    height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+.nav__link {
+  font-size: 1rem;
+  color: $text-color;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 4rem;
+  @media only screen and (max-width: 768px) {
+    display: block;
+    width: 45vw;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    margin: 0 auto;
+  }
+}

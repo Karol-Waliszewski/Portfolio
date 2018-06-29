@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&subset=latin-ext');
+@import 'normalize';
+@import 'variables';
+@import 'grid';
+@import 'btn';
+@import 'nav';
+@import 'header';
+@import 'about';
+@import 'skills';
+@import 'technologies';
+@import 'project';
+@import 'contact';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+.body {
+  background: #fff;
+  color: $text-color;
+  font-family: 'Poppins', sans-serif;
+  @media only screen and (max-width: 768px) {
+    &.active {
+      height: 100vh;
+      overflow: hidden;
+    }
+  }
+}
+
+.center {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  align-self: center;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.line {
+  width: 250px;
+  height: 4px;
+  border: none;
+  background: $primary-color;
+  margin-bottom: 45/16 *1rem;
+}
+
+.wrapper {
+  @media only screen and (min-width: 769px) {
+    margin-top: 75px;
+    margin-bottom: 100px;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.3);
+  }
+}
+
+.heading {
+  font-size: 40/16 * 1rem;
+  font-weight: 700;
+}
+
+.link {
+  color: inherit;
+}
+
+.scroll {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  background: $primary-color;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  transition: 250ms;
+  opacity: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  img {
+    width: 60%;
+    transform: rotate(180deg);
+  }
+  @media only screen and (max-width: 768px) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+p{
+  line-height: 1.7;
+}
+
+b {
+  font-weight: 600;
+}

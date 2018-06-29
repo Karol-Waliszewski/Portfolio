@@ -1,0 +1,22 @@
+.header {
+  background: $primary-color;
+  height: calc(100vh - 75px);
+  position: relative;
+  @media only screen and (max-width: 768px) {
+    height: 100vh;
+  }
+}
+
+.header__heading {
+  font-size: 55/16 * 1rem;
+  text-align: right;
+  position: absolute;
+  right: 10%;
+  bottom: 2%;
+  line-height: 1.5;
+  @media only screen and (max-width: 576px) {
+    font-size: 13vw;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}

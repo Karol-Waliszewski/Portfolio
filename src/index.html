@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Karol Waliszewski | Portfolio</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("user_iAsGdJxURlJbKu3WMvmnI");
+    })();
+  </script>
+</head>
+
+<body class="body">
+
+  <nav id="nav" class="nav">
+    <button id="burger" class="nav__button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav__content">
+      <div class="container">
+        <div class="nav__links">
+          <a href="#about" class="nav__link">O mnie</a>
+          <a href="#skills" class="nav__link">Umiejętności</a>
+          <a href="#technologies" class="nav__link">Technologie</a>
+          <a href="#projects" class="nav__link">Projekty</a>
+          <a href="#contact" class="nav__link">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container wrapper">
+
+    <header class="header">
+      <h1 class="header__heading">
+        Karol<br>Waliszewski
+      </h1>
+    </header>
+
+    <main>
+      <section id="about" class="about row">
+        <div class="col--sm--4">
+          <div class="about__image">
+            <img src="" alt="" class="image">
+          </div>
+        </div>
+        <div class="col--sm--8 ">
+          <div class="about__text">
+            <p>Nazywam się <strong>Karol Waliszewski</strong>. Jestem maturzystą z zamiłowaniem do programowania i <a href="https://pl.wikipedia.org/wiki/Street_workout" class="link" target="_blank">street workoutu.</a></p>
+            <p>Odkąd miałem dostęp do gier, wolałem je edytować, niż w nie grać, jednak przygodę stricte z programowaniem rozpocząłem na początku liceum. Najpierw był to C++, jednak po około połowie roku spróbowałem <b>Web Developmentu</b> i to było to!</p>
+            <p>Obecnie programuję przeróżne rzeczy bazując na <b>JavaScript'cie</b>. Tworzę proste lub zaawansowane strony, programy desktop i "mobilne" (<a href="https://developers.google.com/web/progressive-web-apps/" class="link">PWA</a>) oraz serwery
+              na bazie <b>Node.js</b></p>
+          </div>
+          <button class="btn--filled btn--big">
+            <img src="img/github.svg" alt="github's logo">
+          </button>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <div class="col">
+          <h2 class="heading">Umiejętności:</h2>
+          <hr class="line">
+        </div>
+        <dl>
+          <div class="row skill">
+            <div class="col--sm--2">
+              <div class="skill__image">
+                <img src="img/html.png" alt="" class="image">
+              </div>
+              <dt class="skill__title">HTML</dt>
+            </div>
+            <div class="col--sm--10">
+              <dd class="skill__description">
+                <a class="link" target="_blank" href="https://pl.wikipedia.org/wiki/HTML">Html</a> to język opisowy służący do określania treści i struktury strony. Staram się tworzyć jak najbardziej <b>semantyczne</b> strony, stosując się do obowiązujących
+                standarów (<b>HTM5</b>) oraz metodologii <a href="http://getbem.com/" class="link" target="_blank"><b>BEM</b></a>. Przekłada się to na lepsze <b>pozycjonowanie</b> strony w wyszukiwarkach.
+              </dd>
+            </div>
+          </div>
+          <div class="row skill">
+            <div class="col--sm--2">
+              <div class="skill__image">
+                <img src="img/css.svg" alt="" class="image" style="transform: scale(0.8)">
+              </div>
+              <dt class="skill__title">CSS</dt>
+            </div>
+            <div class="col--sm--10">
+              <dd class="skill__description">
+                <a href="https://pl.wikipedia.org/wiki/Kaskadowe_arkusze_styl%C3%B3w" class="link" target="_blank">CSS</a>, czyli kaskadowe arkusze stylów, to język używany do opisu wyglądu elementów na stronie WWW. Pojęcia takie jak <a href="https://pl.wikipedia.org/wiki/Responsive_web_design"
+                  class="link" target="_blank"><b>responsywność</b></a> (dostosowanie układu do rozmiaru okna przeglądarki), <b>flexbox</b> czy <b>grid</b> nie jest są mi obce. Do usprawnienia pracy używam preprocesora o nazwie <a href="https://sass-lang.com/"
+                  class="link" target="_blank"><b>Sass</b></a>
+              </dd>
+            </div>
+          </div>
+          <div class="row skill">
+            <div class="col--sm--2">
+              <div class="skill__image">
+                <img src="img/js.svg" alt="" class="image" style="transform: scale(0.8)">
+              </div>
+              <dt class="skill__title">JavaScript</dt>
+            </div>
+            <div class="col--sm--10">
+              <dd class="skill__description">
+                <a href="https://pl.wikipedia.org/wiki/JavaScript" class="link" target="_blank">Javascript</a> to język programowania odpowiadający on za interakcje z użytkownikiem. Dzięki znajomości tego języka, oraz jego <a href="https://pl.wikipedia.org/wiki/Framework"
+                  class="link" target="_blank">frameworków</a>: <b>Reacta</b> (+ redux) oraz <b>Vue</b>, jestem w stanie robić proste, jak i zaawansowane strony. Oprócz wykorzystania go na stronach, stawiam na nim serwery (backend) przy użyciu <b>Node.js</b>.
+              </dd>
+            </div>
+          </div>
+          <div class="row skill">
+            <div class="col--sm--2">
+              <div class="skill__image">
+                <img src="img/git.png" alt="" class="image" style="transform: scale(0.9)">
+              </div>
+              <dt class="skill__title">Git</dt>
+            </div>
+            <div class="col--sm--10">
+              <dd class="skill__description">
+                <a href="https://pl.wikipedia.org/wiki/Git_(oprogramowanie)" class="link" target="_blank">Git</a> to system kontroli wersji. Umożliwia on zarządanie projektem i jego wersjami, ułatwia pracę w grupie oraz jest zabezpieczeniem w przypadku
+                utraty danych jeżeli projekt wrzucimy na hosting, przykładowo <a href="https://github.com/" class="link" target="_blank"><b>GitHub</b></a>. Według mnie jest on niezbędnikiem i każdy programista powinien znać pojęcia jak <b>commit</b>,
+                <b>branch</b> czy <b>merge</b>.
+              </dd>
+            </div>
+          </div>
+          <div class="row skill">
+            <div class="col--sm--2">
+              <div class="skill__image">
+                <img src="img/gulp.svg" alt="" class="image">
+              </div>
+              <dt class="skill__title">Gulp</dt>
+            </div>
+            <div class="col--sm--10">
+              <dd class="skill__description">
+                <a href="https://gulpjs.com/" class="link">Gulp</a> to narzędzie które wykonuje <b>szereg procesów</b> w tle podczas gdy my możemy zająć się pisaniem kodu. Stworzyłem własny <a href="https://github.com/Karol-Waliszewski/Gulp-Workflow-Template" class="link"><b>szablon</b></a>, którego używam przy tworzeniu stron. Dzięki niemu posiadam <b>podgląd na żywo</b> od razu po zapisaniu pliku i <b>minimalizuje</b> "wagę" obrazków i innych plików.
+              </dd>
+            </div>
+          </div>
+          <div class="row skill">
+            <div class="col--sm--2">
+              <div class="skill__image">
+                <img src="img/group.svg" alt="" class="image" style="transform: scale(0.8)">
+              </div>
+              <dt class="skill__title">Praca w grupie</dt>
+            </div>
+            <div class="col--sm--10">
+              <dd class="skill__description">
+                Jestem osobą <b>otwartą</b> i towarzyską. Praca w grupie <b>motywuje</b> mnie do działań jeszcze bardziej niż praca samemu. Lubię prowadzić <b>dyskusje</b> na temat najlepszego rozwiązania, słuchać o pomysłach innych jak i <b>proponować</b> własne rozwiązania.
+              </dd>
+            </div>
+          </div>
+        </dl>
+      </section>
+
+      <section id="technologies" class="technologies">
+        <div class="col">
+          <h2 class="heading">Technologie:</h2>
+          <hr class="line">
+        </div>
+        <ul class="row--center technologies__list">
+          <li class="technology col--sm--4"><a href="http://es6-features.org/#Constants" target="_blank" class="technology__link">ECMAScript 6 (ES6)</a></li>
+          <li class="technology col--sm--4"><a href="https://reactjs.org/" target="_blank" class="technology__link">React</a></li>
+          <li class="technology col--sm--4"><a href="https://vuejs.org/" target="_blank" class="technology__link">Vue</a></li>
+          <li class="technology col--sm--4"><a href="https://jquery.com/" target="_blank" class="technology__link">jQuery</a></li>
+          <li class="technology col--sm--4"><a href="https://phonegap.com/" target="_blank" class="technology__link">PhoneGap / Cordova</a></li>
+          <li class="technology col--sm--4"><a href="https://bulma.io/" target="_blank" class="technology__link">Bulma</a></li>
+          <li class="technology col--sm--4"><a href="https://getbootstrap.com/" target="_blank" class="technology__link">Bootstrap</a></li>
+          <li class="technology col--sm--4"><a href="https://www.mysql.com/" target="_blank" class="technology__link">MySQL</a></li>
+          <li class="technology col--sm--4"><a href="https://www.mongodb.com/" target="_blank" class="technology__link">MongoDB</a></li>
+        </ul>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="col">
+          <h2 class="heading">Projekty:</h2>
+          <hr class="line">
+        </div>
+        <div class="row--center">
+          <div class="project col--sm--4">
+            <a target="_blank" href="http://prasowamaker.ct8.pl/" class="project__image">
+              <img src="img/project-prasowka.png" alt="" class="image">
+            </a>
+            <h3 class="project__title">Generator Prasówek</h3>
+            <p class="project__description">Narzędzie do szybkiego tworzenia prasówek. Wystarczy wybrać ilość wiadomości, kliknąć wybrany przycisk, a prasówka pojawi się w pliku gotowym do wydruku. Aplikacja została zbudowana w <b>Electron.js</b>.</p>
+            <div class="project__buttons">
+              <a target="_blank" href="http://prasowamaker.ct8.pl/" class="btn--filled">Podgląd</a>
+              <a target="_blank" href="https://github.com/Karol-Waliszewski/Prasowa-Maker" class="btn--outline"><img src="img/github.svg" alt="github's logo"></a>
+            </div>
+          </div>
+          <div class="project col--sm--4">
+            <a target="_blank" href="https://karol-waliszewski.github.io/Dentist-Webpage/" class="project__image">
+              <img src="img/project-dent.png" alt="" class="image">
+            </a>
+            <h3 class="project__title">Gabinet Dentystyczny</h3>
+            <p class="project__description">Projekt graficzny strony, jak i ona sama został wykonany <b>od zera</b> przeze mnie. Postarałem się, aby napisany kod był na <b>wysokim poziomie</b>, dzięki czemu strona może wybić się wyżej w wynikach wyszukiwania Google, oraz jest dostępna
+              dla niewidomych.</p>
+            <div class="project__buttons">
+              <a target="_blank" href="https://karol-waliszewski.github.io/Dentist-Webpage/" class="btn--filled">Podgląd</a>
+              <a target="_blank" href="https://github.com/Karol-Waliszewski/Dentist-Webpage" class="btn--outline"><img src="img/github.svg" alt="github's logo"></a>
+            </div>
+          </div>
+          <div class="project col--sm--4">
+            <a target="_blank" href="https://karol-waliszewski.github.io/WebDevChallenge-36-React/" class="project__image">
+              <img src="img/project-webdev.png" alt="" class="image">
+            </a>
+            <h3 class="project__title">Weekly Web Dev Challenge</h3>
+            <p class="project__description">Strona wykonana na wzór podanego wcześniej pliku graficznego <b>.psd</b> udostępnionego przez <a class="link" target="_blank" href="https://drive.google.com/drive/u/1/folders/0Bw2hu70L5Ye_VkhvdDZhN3haSlE"><b>Weekly Web Dev Challenge</b></a>.
+              Rozbudowana o framework do <b>Javascriptu</b> nazywającym się <b>React</b>.</p>
+            <div class="project__buttons">
+              <a target="_blank" href="https://karol-waliszewski.github.io/WebDevChallenge-36-React/" class="btn--filled">Podgląd</a>
+              <a target="_blank" href="https://github.com/Karol-Waliszewski/WebDevChallenge-36-React" class="btn--outline"><img src="img/github.svg" alt="github's logo"></a>
+            </div>
+          </div>
+          <div class="project col--sm--4">
+            <a target="_blank" href="http://snuuuuke.ct8.pl/" class="project__image">
+              <img src="img/project-snuke.png" alt="" class="image">
+            </a>
+            <h3 class="project__title">Snuuuuuke.io</h3>
+            <p class="project__description">Klasyczna gra w snake'a rozszerzona o możliwość gry z przyjaciółmi przez internet dzięki <b>Socket.io</b>!</p>
+            <div class="project__buttons">
+              <a target="_blank" href="http://snuuuuke.ct8.pl/" class="btn--filled">Podgląd</a>
+              <a target="_blank" href="https://github.com/Karol-Waliszewski/Snuuuuuke.io" class="btn--outline"><img src="img/github.svg" alt="github's logo"></a>
+            </div>
+          </div>
+          <div class="project col--sm--4">
+            <div class="project__image">
+              <img src="" alt="" class="image">
+            </div>
+            <h3 class="project__title">System Rejestracji Czasu Pracy</h3>
+            <p class="project__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum eu sapien eu lobortis. Vestibulum ut lorem eros. Integer .</p>
+            <div class="project__buttons">
+              <a target="_blank" href="https://github.com/Karol-Waliszewski" class="btn--filled">Podgląd</a>
+              <a target="_blank" href="https://github.com/Karol-Waliszewski" class="btn--outline"><img src="img/github.svg" alt="github's logo"></a>
+            </div>
+          </div>
+          <div class="project col--sm--4">
+            <a target="_blank" href="https://karol-waliszewski.github.io/Donut-Clicker-PWA/" class="project__image">
+              <img src="img/project-donut.png" alt="" class="image">
+            </a>
+            <h3 class="project__title">Donut Clicker</h3>
+            <p class="project__description">Klikaj w donuta i zarabiaj pieniądze, dzięki którym będziesz w stanie ulepszyć i udekorować go na nowo! Świetny zabijacz czasu dostępny również jako aplikacja dzięki technologii <b>Progressive Web App</b>.</p>
+            <div class="project__buttons">
+              <a target="_blank" href="https://karol-waliszewski.github.io/Donut-Clicker-PWA/" class="btn--filled">Podgląd</a>
+              <a target="_blank" href="https://github.com/Karol-Waliszewski/Donut-Clicker-PWA" class="btn--outline"><img src="img/github.svg" alt="github's logo"></a>
+            </div>
+          </div>
+          <div class="project col--sm--4">
+            <div class="project__image">
+              <img src="img/project-cc.png" alt="" class="image">
+            </div>
+            <h3 class="project__title">Przelicznik Walut</h3>
+            <p class="project__description"><b>Rozszerzenie</b> do <b>Chrome'a</b> pokazujące aktualny stan walut na świecie z wbudowanym przelicznikiem. Waluty pobierane są z <b>Api</b> Narodowego Banku Polskiego.</p>
+            <div class="project__buttons">
+              <button disabled class="btn--filled">Podgląd</button>
+              <a target="_blank" href="https://github.com/Karol-Waliszewski/Currency-Chrome-Calculator" class="btn--outline"><img src="img/github.svg" alt="github's logo"></a>
+            </div>
+          </div>
+          <div class="project col--sm--4">
+            <div class="project__image">
+              <img src="" alt="" class="image">
+            </div>
+            <h3 class="project__title">Powiadomienia o Wyprzedaży</h3>
+            <p class="project__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum eu sapien eu lobortis. Vestibulum ut lorem eros. Integer .</p>
+            <div class="project__buttons">
+              <button disabled class="btn--filled">Podgląd</button>
+              <a target="_blank" href="https://github.com/Karol-Waliszewski/Zalando-Discounts-Alerter" class="btn--outline"><img src="img/github.svg" alt="github's logo"></a>
+            </div>
+          </div>
+          <div class="project col--sm--4">
+            <a target="_blank" href="https://karol-waliszewski.github.io/" class="project__image">
+              <img src="img/project-portfolio.png" alt="" class="image">
+            </a>
+            <h3 class="project__title">Portfolio</h3>
+            <p class="project__description">Moja własna strona, którą właśnie przeglądasz. Wykonana od zera włącznie z projektem graficznym utworzonym w <b>Adobe XD</b>. Wszystkie style są autorkie, jedynie wykorzystałem <a href="https://necolas.github.io/normalize.css/" target="_blank"
+                class="link" target="_blank"><b>Normalize.css</b></a> do ujednolicenia wyglądu strony w każdej przeglądarce</p>
+            <div class="project__buttons">
+              <a target="_blank" href="https://karol-waliszewski.github.io/" class="btn--filled">Podgląd</a>
+              <a target="_blank" href="https://github.com/Karol-Waliszewski" class="btn--outline"><img src="img/github.svg" alt="github's logo"></a>
+            </div>
+          </div>
+          <p class="projects__more center">Po więcej projektów, zapraszam na mojego <a class="projects__link" href="https://github.com/Karol-Waliszewski" target="_blank">Githuba</a>!</p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact row--middle">
+        <div class="col--md--8">
+          <h2 class="heading col">Kontakt</h2>
+          <form class="row" id="contactForm">
+            <div class="col--md--6">
+              <label for="name" class="contact__label">Imię:</label>
+              <input name="name" type="text" class="contact__input" id="name" placeholder="Jan Kowalski" />
+              <span class="contact__error">Podaj imię.</span>
+            </div>
+            <div class="col--md--6">
+              <label for="email" class="contact__label">Email:</label>
+              <input name="email" type="email" class="contact__input" id="email" placeholder="jankowalski@gmail.com" />
+              <span class="contact__error">Podaj poprawny adres email.</span>
+            </div>
+            <div class="col--md--12">
+              <label for="message" class="contact__label--textarea">Treść:</label>
+              <textarea id="message" name="message" class="contact__textarea" placeholder="Przywitaj się :)"></textarea>
+              <span class="contact__error">Dodaj treść wiadomości.</span>
+            </div>
+            <input type="submit" id="submit" class="btn--contact center" value="Wyślij" />
+          </form>
+        </div>
+        <div class="col--md--4">
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <a class="scroll" id="scroll" href="#">
+    <img src="img/arrow-up.svg" alt="arrow up">
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

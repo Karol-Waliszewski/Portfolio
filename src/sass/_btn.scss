@@ -1,0 +1,100 @@
+.btn {
+  font-size: 14/16 *1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: $text-color;
+  background: none;
+  border: none;
+  height: 33px;
+  padding-top: 1px;
+  width: 96px;
+  transition: 250ms;
+  display: inline-block;
+  border-radius: 2px;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  img {
+    height: 90%;
+  }
+
+  &[disabled]{
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &--filled {
+    @extend .btn;
+    background: $primary-color;
+
+    &:hover {
+      background: darken($primary-color,10%);
+    }
+  }
+
+  &--outline {
+    @extend .btn;
+    border: 1px solid $text-color;
+
+    &:hover {
+      background: $text-color;
+      color: $primary-color;
+
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  &--contact {
+    @extend .btn;
+    border: 2px solid $text-color;
+
+    transition: 350ms;
+
+    &:hover {
+      background: $text-color;
+      color: $primary-color;
+    }
+
+    &.success {
+      border-color: $success-color;
+      color: $primary-color;
+      background: $success-color;
+      width: 230px;
+    }
+
+    &.error {
+      border-color: $error-color;
+      color: $error-color;
+
+      &:hover {
+        border-color: $error-darker-color;
+        color: $primary-color;
+        background: $error-darker-color;
+      }
+    }
+
+    &[disabled] {
+      width: 0;
+      border-width: 1;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  &--big {
+    @extend .btn;
+    height: 50px;
+    width: 150px;
+    font-size: 1.2rem;
+    padding-top: 2px;
+
+    img {
+      height: 80%;
+    }
+  }
+}
