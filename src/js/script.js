@@ -24,6 +24,7 @@ const NavModule = (function() {
 const ScrollModule = (function() {
   // DOM Element
   var $scroll = document.getElementById('scroll');
+  var $burger = document.getElementById('burger');
 
   var checkVisibility = function() {
     let offset = window.scrollY;
@@ -35,8 +36,24 @@ const ScrollModule = (function() {
     }
   };
 
+  var checkShadow = function() {
+    let offset = window.scrollY;
+    let height = window.innerHeight;
+    if (offset > height -1) {
+      $burger.classList.add('shadow');
+    } else {
+      $burger.classList.remove('shadow');
+    }
+  };
   window.addEventListener('scroll', checkVisibility);
-  checkVisibility();
+  window.addEventListener('scroll', checkShadow);
+
+  var init = function() {
+    checkVisibility();
+    checkShadow();
+  };
+
+  init();
 })();
 
 const contactModule = (function() {

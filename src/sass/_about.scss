@@ -6,7 +6,14 @@
   background-color: #E8E8E8;
   height: calc(300px + 2vh);
   overflow: hidden;
+  @media only screen and (max-width: 768px){
+    height: calc(340px + 2vh);
+  }
+}
 
+.about__name {
+  font-size: 1.35rem;
+  font-weight: 600;
 }
 
 .about__text {
@@ -17,7 +24,7 @@
   margin-bottom: 2rem;
   @media only screen and (max-width: 767px) {
     height: auto;
-
+text-align: justify;
     p {
       margin: 0.8rem 0;
     }

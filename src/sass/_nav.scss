@@ -12,6 +12,7 @@
       .nav__content {
         transform: translateX(0);
         width: $nav-width-mobile;
+          padding-right: 0.5rem;
       }
     }
   }
@@ -26,7 +27,6 @@
 
 .nav__content {
   width: 100%;
-  padding-right: 0.5rem;
   height: $nav-height;
   overflow: hidden;
   transition: $nav-transition;
@@ -58,7 +58,9 @@
   &:focus,
   &:hover {
     outline: none;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    @media only screen and (min-width: 769px) {
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
   }
 
   &.active {
@@ -93,9 +95,15 @@
     transition: $nav-transition;
   }
   @media only screen and (max-width: 768px) {
-    width: 45px;
+    width: 100vw;
     height: $nav-height-mobile;
     padding: 5px 0;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 1rem;
+    &.shadow {
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
   }
 }
 

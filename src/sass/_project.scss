@@ -5,12 +5,13 @@
 
 .projects__more {
   margin-top: 3rem;
+  padding: 0 5px;
   font-size: 1.1rem;
 }
 
 .projects__link {
   color: $text-color;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .project {
@@ -27,13 +28,13 @@
   background-color: #E8E8E8;
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
   transition: 250ms;
+  overflow: hidden;
   @media only screen and (max-width: 767px) {
     height: 30vh;
   }
   &:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
   }
-
 }
 
 .project__title {
