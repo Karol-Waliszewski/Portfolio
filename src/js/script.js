@@ -1,30 +1,32 @@
-const NavModule = (function() {
+// NAV and SCROLL MODULE
+
+(function() {
   // DOM Elements
   var $nav = document.getElementById('nav');
-  var $body = document.querySelector('.body');
   var $burger = document.getElementById('burger');
   var $links = document.querySelectorAll('.nav__link');
+  var $scroll = document.getElementById('scroll');
 
+  // Variables
+  var active = false;
+  var mobile = 768;
+
+  // Functions
   var toggleActive = function() {
+    active = !active;
     $nav.classList.toggle('active');
     $burger.classList.toggle('active');
-    $body.classList.toggle('active');
+    if (window.innerWidth < mobile) {
+      if (active)
+        $nav.addEventListener('touchmove', disableScroll, false);
+      else
+        $nav.removeEventListener('touchmove', disableScroll, false);
+    }
   };
 
-  $burger.addEventListener('click', toggleActive);
-  for (let $link of $links) {
-    $link.addEventListener('click', function() {
-      if (window.innerWidth < 768)
-        toggleActive();
-    });
-  }
-
-})();
-
-const ScrollModule = (function() {
-  // DOM Element
-  var $scroll = document.getElementById('scroll');
-  var $burger = document.getElementById('burger');
+  var disableScroll = function(e) {
+    e.preventDefault();
+  };
 
   var checkVisibility = function() {
     let offset = window.scrollY;
@@ -39,24 +41,32 @@ const ScrollModule = (function() {
   var checkShadow = function() {
     let offset = window.scrollY;
     let height = window.innerHeight;
-    if (offset > height -1) {
+    if (offset > height - $burger.clientHeight - 1) {
       $burger.classList.add('shadow');
     } else {
       $burger.classList.remove('shadow');
     }
   };
+
+  // Listeners
   window.addEventListener('scroll', checkVisibility);
   window.addEventListener('scroll', checkShadow);
+  $burger.addEventListener('click', toggleActive);
+  for (let $link of $links) {
+    $link.addEventListener('click', function() {
+      if (window.innerWidth < mobile)
+        toggleActive();
+    });
+  }
 
-  var init = function() {
-    checkVisibility();
-    checkShadow();
-  };
+  checkVisibility();
+  checkShadow();
 
-  init();
 })();
 
-const contactModule = (function() {
+// CONTACT MODULE
+
+(function() {
   // DOM Elements
   var $form = document.getElementById('contactForm');
   var $name = document.getElementById('name');
@@ -64,8 +74,10 @@ const contactModule = (function() {
   var $message = document.getElementById('message');
   var $submit = document.getElementById('submit');
 
+  // Variables
   var inputs = [$email, $name, $message];
 
+  // Functions
   var validateData = function() {
     let flag = true;
 
@@ -147,6 +159,7 @@ const contactModule = (function() {
       });
   };
 
+  // Listener
   $form.addEventListener('submit', submitForm);
 
 })();

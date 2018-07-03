@@ -3,13 +3,24 @@ const gulp = require('gulp'),
   purify = require('gulp-purifycss'),
   sourcemaps = require('gulp-sourcemaps'),
   imagemin = require('gulp-imagemin'),
+  mozjpeg = require('imagemin-mozjpeg'),
+  pngquant = require('imagemin-pngquant'),
   uglify = require('gulp-uglify'),
   babel = require('gulp-babel'),
   browserSync = require('browser-sync').create();
 
+// ------- EDIT SECTION ------- //
+
 var distDir = 'dist',
   buildDir = 'docs',
   srcDir = 'src';
+
+var imageQuality = {
+  jpg: 80, // %
+  png: 90  // %
+};
+
+// ----------- END ----------- //
 
 gulp.task('css-dev', () => {
   return gulp.src(`${srcDir}/sass/**/*.scss`)
@@ -22,7 +33,9 @@ gulp.task('css-dev', () => {
 
 gulp.task('css-build', () => {
   return gulp.src(`${srcDir}/sass/**/*.scss`)
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sass({
+      outputStyle: 'compressed'
+    }).on('error', sass.logError))
     .pipe(purify([`${srcDir}/js/**/*.js`, `${srcDir}/*.html`], {
       minify: true
     }))
@@ -61,7 +74,24 @@ gulp.task('fonts', () => {
 
 gulp.task('img', () => {
   return gulp.src(`${srcDir}/img/**/*.+(jpg|jpeg|png|svg|gif)`)
-    .pipe(imagemin())
+    .pipe(imagemin([
+      //svg
+      imagemin.svgo({
+        plugins: [{
+          removeViewBox: false
+        }]
+      }),
+      //jpg
+      mozjpeg({
+        quality: imageQuality.jpg,
+        progressive: true
+      }),
+      //png
+      pngquant({
+        speed: 1,
+        quality: imageQuality.png
+      }),
+    ]))
     .pipe(gulp.dest(`${distDir}/img`));
 });
 

@@ -6,7 +6,7 @@
   background-color: #E8E8E8;
   height: calc(300px + 2vh);
   overflow: hidden;
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 768px) {
     height: calc(340px + 2vh);
   }
 }
@@ -22,9 +22,10 @@
   flex-direction: column;
   height: calc(100% - 80px);
   margin-bottom: 2rem;
+  text-align: left;
   @media only screen and (max-width: 767px) {
     height: auto;
-text-align: justify;
+
     p {
       margin: 0.8rem 0;
     }

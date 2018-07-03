@@ -1,10 +1,10 @@
 {
-  "name": "workflow-template",
+  "name": "portfolio-karol_waliszewski",
   "version": "1.0.0",
-  "description": "",
+  "description": "portfolio created by karol waliszewski from scratch",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp"
   },
   "author": "Karol Waliszewski",
   "license": "ISC",
@@ -16,6 +16,8 @@
     "browser-sync": "^2.18.8",
     "gulp-babel": "^6.1.2",
     "gulp-imagemin": "^3.2.0",
+    "imagemin-mozjpeg": "^7.0.0",
+    "imagemin-pngquant": "^5.1.0",
     "gulp-purifycss": "^0.2.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",

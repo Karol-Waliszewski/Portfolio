@@ -27,12 +27,6 @@
   background: #fff;
   color: $text-color;
   font-family: 'Poppins', sans-serif;
-  @media only screen and (max-width: 768px) {
-    &.active {
-      height: 100vh;
-      overflow: hidden;
-    }
-  }
 }
 
 .center {
