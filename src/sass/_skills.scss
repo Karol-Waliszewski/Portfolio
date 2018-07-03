@@ -14,7 +14,18 @@
 
 .skill__description {
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.skill__link {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .skill__title {
@@ -31,9 +42,9 @@
     right: auto;
     bottom: 0.5rem;
   }
+
   img {
     object-fit: contain;
-
   }
 }
 @media only screen and (max-width: 767px) {

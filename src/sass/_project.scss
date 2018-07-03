@@ -50,6 +50,9 @@
   text-align: justify;
   font-size: 14/16 *1rem;
   margin-bottom: 1.1rem;
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .project__buttons {
