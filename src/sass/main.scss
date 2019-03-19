@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700&subset=latin-ext');
-@import 'normalize';
-@import 'variables';
-@import 'grid';
-@import 'btn';
-@import 'nav';
-@import 'header';
-@import 'about';
-@import 'skills';
-@import 'technologies';
-@import 'project';
-@import 'contact';
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600,700&subset=latin-ext");
+@import "normalize";
+@import "variables";
+@import "grid";
+@import "btn";
+@import "nav";
+@import "header";
+@import "about";
+@import "skills";
+@import "technologies";
+@import "project";
+@import "contact";
 
 * {
   box-sizing: border-box;
@@ -26,7 +26,7 @@
 .body {
   background: #fff;
   color: $text-color;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .center {
@@ -48,14 +48,21 @@
   height: 4px;
   border: none;
   background: $primary-color;
-  margin-bottom: 45/16 *1rem;
+  margin-bottom: 45/16 * 1rem;
 }
 
 .wrapper {
   @media only screen and (min-width: 769px) {
     margin-top: 75px;
     margin-bottom: 100px;
-    box-shadow: 0 5px 35px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.content {
+  padding: 0 1.5rem;
+  @media only screen and (max-width: 769px) {
+    padding: 0 1rem;
   }
 }
 
@@ -86,7 +93,7 @@
   &:focus,
   &:hover {
     outline: none;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
 
   &.hidden {
@@ -104,7 +111,7 @@
   }
 }
 
-p{
+p {
   line-height: 1.7;
 }
 

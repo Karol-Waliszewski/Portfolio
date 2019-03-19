@@ -16,7 +16,8 @@
 
 .project {
   padding: 1rem 2rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
   min-height: 400px;
   display: flex;
   flex-direction: column;
@@ -25,20 +26,20 @@
 .project__image {
   width: 100%;
   height: calc(200px + 1vh);
-  background-color: #E8E8E8;
-  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  background-color: #e8e8e8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   transition: 250ms;
   overflow: hidden;
   @media only screen and (max-width: 767px) {
     height: 30vh;
   }
   &:hover {
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   }
 }
 
 .project__title {
-  font-size: 28/16 *1rem;
+  font-size: 28/16 * 1rem;
   font-weight: 600;
   margin: {
     top: 1.5rem;
@@ -48,8 +49,9 @@
 
 .project__description {
   text-align: justify;
-  font-size: 14/16 *1rem;
+  font-size: 14/16 * 1rem;
   margin-bottom: 1.1rem;
+  color: lighten(#000, 30%);
   @media only screen and (max-width: 768px) {
     text-align: center;
   }
