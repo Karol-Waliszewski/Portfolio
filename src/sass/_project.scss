@@ -40,7 +40,7 @@
 
 .project__title {
   font-size: 28/16 * 1rem;
-  font-weight: 600;
+  font-weight: 500;
   margin: {
     top: 1.5rem;
     bottom: 1.7rem;
@@ -48,7 +48,7 @@
 }
 
 .project__description {
-  text-align: justify;
+  text-align: center;
   font-size: 14/16 * 1rem;
   margin-bottom: 1.1rem;
   color: lighten(#000, 30%);

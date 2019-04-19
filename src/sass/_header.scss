@@ -1,13 +1,15 @@
 .header {
   background: $primary-color;
-  height: calc(100vh - 75px);
+  height: calc(100vh - 75px); 
   position: relative;
   @media only screen and (max-width: 768px) {
-    height: 100vh;
+    height: 100vh; /* Fallback */
+    height: calc(var(--vh, 1vh) * 100);
   }
 }
 
 .header__heading {
+  font-family: "Poppins", sans-serif;
   font-size: 55/16 * 1rem;
   text-align: right;
   position: absolute;

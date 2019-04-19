@@ -1,0 +1,9 @@
+{
+    "short_name": "Waliszewski",
+    "name": "Karol Waliszewski",
+    "icons": [],
+    "start_url": "/",
+    "background_color": "#F7E97C",
+    "display": "standalone",
+    "theme_color": "#F7E97C"
+}

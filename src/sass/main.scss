@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,600,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Poppins:700");
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin-ext');
 @import "normalize";
 @import "variables";
 @import "grid";
@@ -26,7 +27,7 @@
 .body {
   background: #fff;
   color: $text-color;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .center {
@@ -68,7 +69,7 @@
 
 .heading {
   font-size: 40/16 * 1rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .link {

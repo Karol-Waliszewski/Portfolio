@@ -163,3 +163,12 @@
   $form.addEventListener('submit', submitForm);
 
 })();
+
+// VH variable mobile fix 
+function fixVH(){
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh',`${vh}px`);
+}
+
+fixVH();
+document.addEventListener('resize',fixVH);
