@@ -1,6 +1,6 @@
 .projects {
   padding-top: 2rem;
-  padding-bottom: calc(3rem + 3vh);
+  //padding-bottom: calc(2rem + 2vh);
 }
 
 .projects__more {
@@ -11,7 +11,7 @@
 
 .projects__link {
   color: $text-color;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .project {
@@ -26,6 +26,7 @@
 .project__image {
   width: 100%;
   height: calc(200px + 1vh);
+  min-height: 250px;
   background-color: #e8e8e8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   transition: 250ms;

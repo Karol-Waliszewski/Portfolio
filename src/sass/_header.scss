@@ -1,24 +1,80 @@
+@keyframes float {
+  0% {
+    //box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translateX(-50%) translatey(0px);
+  }
+
+  50% {
+    //box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translateX(-50%) translatey(-11px);
+  }
+
+  100% {
+    //box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translateX(-50%) translatey(0px);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
 .header {
   background: $primary-color;
-  height: calc(100vh - 75px); 
   position: relative;
-  @media only screen and (max-width: 768px) {
-    height: 100vh; /* Fallback */
+  height: calc(100vh - 75px);
+  position: relative;
+
+  @media only screen and (max-width: 1100px) {
+    height: 100vh;
+    /* Fallback */
     height: calc(var(--vh, 1vh) * 100);
   }
 }
 
 .header__heading {
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
   font-size: 55/16 * 1rem;
   text-align: right;
   position: absolute;
   right: 10%;
   bottom: 2%;
   line-height: 1.5;
+
   @media only screen and (max-width: 576px) {
     font-size: 13vw;
     right: 50%;
     transform: translateX(50%);
+    bottom: 4%;
+  }
+}
+
+.header__mouse {
+  border: none;
+  background: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  bottom: 1.5%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  animation: float 3s ease-in-out infinite, show 2s ease-in;
+  visibility: hidden;
+  border-radius: 10%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media only screen and (max-width: 576px) {
+    visibility: visible
   }
 }

@@ -1,8 +1,9 @@
 // NAV and SCROLL MODULE
 
-(function() {
+(function () {
   // DOM Elements
   var $nav = document.getElementById('nav');
+  var $burgerWrapper = document.querySelector('.nav__burger');
   var $burger = document.getElementById('burger');
   var $links = document.querySelectorAll('.nav__link');
   var $scroll = document.getElementById('scroll');
@@ -12,10 +13,11 @@
   var mobile = 768;
 
   // Functions
-  var toggleActive = function() {
+  var toggleActive = function () {
     active = !active;
     $nav.classList.toggle('active');
     $burger.classList.toggle('active');
+    $burgerWrapper.classList.toggle('active');
     if (window.innerWidth < mobile) {
       if (active)
         $nav.addEventListener('touchmove', disableScroll, false);
@@ -24,11 +26,11 @@
     }
   };
 
-  var disableScroll = function(e) {
+  var disableScroll = function (e) {
     e.preventDefault();
   };
 
-  var checkVisibility = function() {
+  var checkVisibility = function () {
     let offset = window.scrollY;
     let height = window.innerHeight;
     if (offset > height / 2) {
@@ -38,13 +40,13 @@
     }
   };
 
-  var checkShadow = function() {
+  var checkShadow = function () {
     let offset = window.scrollY;
     let height = window.innerHeight;
-    if (offset > height - $burger.clientHeight - 1) {
-      $burger.classList.add('shadow');
+    if (offset > height - $burgerWrapper.clientHeight - 1) {
+      $burgerWrapper.classList.add('shadow');
     } else {
-      $burger.classList.remove('shadow');
+      $burgerWrapper.classList.remove('shadow');
     }
   };
 
@@ -53,7 +55,7 @@
   window.addEventListener('scroll', checkShadow);
   $burger.addEventListener('click', toggleActive);
   for (let $link of $links) {
-    $link.addEventListener('click', function() {
+    $link.addEventListener('click', function () {
       if (window.innerWidth < mobile)
         toggleActive();
     });
@@ -66,7 +68,7 @@
 
 // CONTACT MODULE
 
-(function() {
+(function () {
   // DOM Elements
   var $form = document.getElementById('contactForm');
   var $name = document.getElementById('name');
@@ -78,7 +80,7 @@
   var inputs = [$email, $name, $message];
 
   // Functions
-  var validateData = function() {
+  var validateData = function () {
     let flag = true;
 
     for (let input of inputs) {
@@ -101,7 +103,7 @@
     return flag;
   };
 
-  var clearForm = function() {
+  var clearForm = function () {
     $form.reset();
     for (let input of inputs) {
       input.classList.remove('error');
@@ -109,14 +111,14 @@
     }
   };
 
-  var submitForm = function(e) {
+  var submitForm = function (e) {
     e.preventDefault();
     $submit.setAttribute('disabled', true);
 
     if (validateData()) {
       sendMessage();
     } else {
-      setTimeout(function() {
+      setTimeout(function () {
         submitError();
         $submit.removeAttribute('disabled');
       }, 500);
@@ -124,19 +126,19 @@
 
   };
 
-  var submitSuccess = function() {
+  var submitSuccess = function () {
     $submit.value = 'Pomyślnie wysłano wiadomość';
     $submit.classList.add('success');
     $submit.classList.remove('error');
   };
 
-  var submitError = function() {
+  var submitError = function () {
     $submit.value = 'Wyślij';
     $submit.classList.add('error');
     $submit.classList.remove('success');
   };
 
-  var sendMessage = function() {
+  var sendMessage = function () {
     let service_id = "lolekappa";
     let template_id = "template_da8gZu7J";
 
@@ -165,10 +167,10 @@
 })();
 
 // VH variable mobile fix 
-function fixVH(){
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh',`${vh}px`);
+function fixVH() {
+  let vh = document.documentElement.clientHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 
 fixVH();
-document.addEventListener('resize',fixVH);
+window.addEventListener('resize', fixVH);

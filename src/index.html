@@ -26,11 +26,13 @@
 <body class="body">
 
   <nav id="nav" class="nav">
-    <button id="burger" class="nav__button">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+    <div class="nav__burger">
+      <button id="burger" class="nav__button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
     <div class="nav__content">
       <div class="container">
         <div class="nav__links">
@@ -50,216 +52,33 @@
       <h1 class="header__heading">
         Karol<br>Waliszewski
       </h1>
+      <a href="#about" class="header__mouse"><img src="img/mouse.svg" alt="mouse icon"></a>
     </header>
 
     <main class="content">
       <section id="about" class="about row">
         <div class="col--sm--4">
           <div class="about__image">
-            <img src="img/about2.jpg" alt="Moje zdjęcie" class="image" style="filter: brightness(110%); transform: scale(1.1);">
+            <img src="img/about2.jpg" alt="Moje zdjęcie" class="image"
+              style="filter: brightness(110%); transform: scale(1.1);">
           </div>
         </div>
         <div class="col--sm--8 ">
           <div class="about__text">
             <p>Nazywam się <strong class="about__name">Karol Waliszewski</strong>. Jestem maturzystą z zamiłowaniem do
-              programowania i street workoutu. </p>
+              programowania&nbsp;i&nbsp;street workoutu. </p>
             <p>Odkąd miałem dostęp do gier, wolałem je edytować, niż w nie grać, jednak przygodę stricte z
               programowaniem rozpocząłem na początku liceum. Najpierw był to C++, jednak po około połowie roku
-              spróbowałem Web Developmentu i to było to!</p>
+              spróbowałem Web Developmentu i&nbsp;to było to!</p>
             <p>Obecnie programuję przeróżne rzeczy bazując na JavaScript'cie. Tworzę proste lub zaawansowane
-              strony, programy desktop i "mobilne" (<a href="https://developers.google.com/web/progressive-web-apps/"
-                class="link">PWA</a>) oraz serwery
+              strony, programy desktop i&nbsp;"mobilne" (<a
+                href="https://developers.google.com/web/progressive-web-apps/" class="link">PWA</a>) oraz serwery
               na bazie Node.js</p>
           </div>
           <a class="btn--filled btn--big" href="https://github.com/Karol-Waliszewski">
             <img src="img/github.svg" alt="github's logo">
           </a>
         </div>
-      </section>
-
-      <section id="skills" class="skills">
-        <div class="col">
-          <h2 class="heading">Umiejętności:</h2>
-          <hr class="line">
-        </div>
-        <dl>
-          <div class="row skill">
-            <div class="col--sm--2">
-              <div class="skill__image">
-                <img src="img/html.png" alt="Ikona HTML5" class="image">
-              </div>
-              <dt class="skill__title">
-                <a class="skill__link" target="_blank" href="https://pl.wikipedia.org/wiki/HTML">HTML</a>
-              </dt>
-            </div>
-            <div class="col--sm--10 skill__description">
-              <dd>
-                Staram się tworzyć jak najbardziej semantyczne strony, stosując się do obowiązujących standarów (HTML5) oraz metodologii BEM. Przekłada się to lepsze pozycjonowanie strony w wyszukiwarkach.
-              </dd>
-            </div>
-          </div>
-          <div class="row skill">
-            <div class="col--sm--2">
-              <div class="skill__image">
-                <img src="img/css.svg" alt="Ikona CSS3" class="image" style="transform: scale(0.8)">
-              </div>
-              <dt class="skill__title">
-                <a href="https://pl.wikipedia.org/wiki/Kaskadowe_arkusze_styl%C3%B3w" class="skill__link"
-                  target="_blank">CSS</a>
-              </dt>
-            </div>
-            <div class="col--sm--10 skill__description">
-              <dd>Przy wykorzystaniu CSSa staram się tworzyć estetyczne projekty. Jestem również zaznajomiony z pojęciami jak responsywność (dostosowanie układu do rozmiaru okna przeglądarki), flexbox czy grid. Do usprawnienia pracy używam preprocesora o nazwie Sass.</a>
-              </dd>
-            </div>
-          </div>
-          <div class="row skill">
-            <div class="col--sm--2">
-              <div class="skill__image">
-                <img src="img/js.svg" alt="Ikona JS" class="image" style="transform: scale(0.8)">
-              </div>
-              <dt class="skill__title">
-                <a href="https://pl.wikipedia.org/wiki/JavaScript" class="skill__link" target="_blank">Javascript</a>
-              </dt>
-            </div>
-            <div class="col--sm--10 skill__description">
-              <dd>
-                Dzięki znajomości Javascriptu, oraz jego frameworków: Reacta oraz Vue, jestem w stanie robić
-                proste, jak i zaawansowane strony.
-                Oprócz wykorzystania go na stronach, stawiam na nim serwery (backend) przy użyciu Node.js.
-              </dd>
-            </div>
-          </div>
-          <div class="row skill">
-            <div class="col--sm--2">
-              <div class="skill__image">
-                <img src="img/git.png" alt="Logo Gita" class="image" style="transform: scale(0.9)">
-              </div>
-              <dt class="skill__title">
-                <a href="https://pl.wikipedia.org/wiki/Git_(oprogramowanie)" class="skill__link" target="_blank">Git</a>
-              </dt>
-            </div>
-            <div class="col--sm--10 skill__description">
-              <dd>
-                Git jest moim niezbędnikiem w trakcie projektów grupowych, ale wykorzystuję go również w 90% moich
-                projektów solowych. Pojęcia takie jak commit, branch czy merge nie są mi obce.
-              </dd>
-            </div>
-          </div>
-          <div class="row skill">
-            <div class="col--sm--2">
-              <div class="skill__image">
-                <img src="img/gulp.svg" alt="Logo Gulpa" class="image">
-              </div>
-              <dt class="skill__title">
-                <a href="https://gulpjs.com/" class="skill__link">Gulp</a>
-              </dt>
-            </div>
-            <div class="col--sm--10 skill__description">
-              <dd>
-                Stworzyłem własny <a href="https://github.com/Karol-Waliszewski/Gulp-Workflow-Template"
-                  class="link">szablon</a>,
-                którego używam przy tworzeniu stron. Dzięki niemu posiadam podgląd na żywo od razu po zapisaniu
-                pliku i minimalizuje"wagę" obrazków i innych plików.
-              </dd>
-            </div>
-          </div>
-          <div class="row skill">
-            <div class="col--sm--2">
-              <div class="skill__image">
-                <img src="img/adobe.png" alt="Logo AdobeXD" class="image">
-              </div>
-              <dt class="skill__title">
-                Grafika
-              </dt>
-            </div>
-            <div class="col--sm--10 skill__description">
-              <dd>
-                Jeżeli jest potrzeba, potrafię zrobić prosty projekt strony internetowej, ikonkę czy baner. Do tworzenia
-                grafik korzystam z Adobe Experience Design (Adobe Xd). Przykładem mojego projektu jest ta strona, a po
-                więcej zapraszam do zakładki projektów.
-              </dd>
-            </div>
-          </div>
-          <div class="row skill">
-            <div class="col--sm--2">
-              <div class="skill__image">
-                <img src="img/group.svg" alt="trzy postaci" class="image" style="transform: scale(0.8)">
-              </div>
-              <dt class="skill__title">Praca w grupie</dt>
-            </div>
-            <div class="col--sm--10 skill__description">
-              <dd>
-                Jestem osobą otwartą i towarzyską. Praca w grupie motywuje mnie do działań jeszcze
-                bardziej niż praca samemu. Lubię prowadzić dyskusje na temat najlepszego rozwiązania, słuchać o
-                pomysłach innych jak i proponować własne rozwiązania.
-              </dd>
-            </div>
-          </div>
-        </dl>
-      </section>
-
-      <section id="technologies" class="technologies">
-        <div class="col">
-          <h2 class="heading">Technologie:</h2>
-          <hr class="line">
-        </div>
-        <ul class="row--center technologies__list">
-          <li class="technology col--sm--4">
-            <a href="http://es6-features.org/#Constants" target="_blank" class="technology__link">
-              <img src="img/logos/es6.png" alt="es6's logo" class="technology__image">
-              <p class="technology__name">ECMAScript 6</p>
-            </a>
-          </li>
-          <li class="technology col--sm--4">
-            <a href="https://reactjs.org/" target="_blank" class="technology__link">
-              <img src="img/logos/react.png" alt="React's logo" class="technology__image">
-              <p class="technology__name">React</p>
-            </a>
-          </li>
-          <li class="technology col--sm--4">
-            <a href="https://vuejs.org/" target="_blank" class="technology__link"><img src="img/logos/vue.png"
-                alt="Vue's logo" class="technology__image">
-              <p class="technology__name">Vue</p>
-            </a>
-          </li>
-          <li class="technology col--sm--4">
-            <a href="https://nodejs.org/" target="_blank" class="technology__link">
-              <img src="img/logos/node.png" alt="node.js' logo" class="technology__image">
-              <p class="technology__name">Node.js</p>
-            </a>
-          </li>
-          <li class="technology col--sm--4">
-            <a href="https://jquery.com/" target="_blank" class="technology__link">
-              <img src="img/logos/jquery.png" alt="jquery's logo" class="technology__image">
-              <p class="technology__name">JQuery</p>
-            </a>
-          </li>
-          <li class="technology col--sm--4">
-            <a href="https://sass-lang.com/" target="_blank" class="technology__link">
-              <img src="img/logos/sass.png" alt="sass' logo" class="technology__image">
-              <p class="technology__name">Sass</p>
-            </a>
-          </li>
-          <li class="technology col--sm--4">
-            <a href="https://getbootstrap.com/" target="_blank" class="technology__link">
-              <img src="img/logos/bootstrap.png" alt="bootstrap's logo" class="technology__image">
-              <p class="technology__name">Bootstrap</p>
-            </a>
-          </li>
-          <li class="technology col--sm--4">
-            <a href="https://en.wikipedia.org/wiki/SQL" target="_blank" class="technology__link">
-              <img src="img/logos/sql.png" alt="sql's logo" class="technology__image">
-              <p class="technology__name">SQL</p>
-            </a>
-          </li>
-          <li class="technology col--sm--4">
-            <a href="https://www.mongodb.com/" target="_blank" class="technology__link">
-              <img src="img/logos/mongodb.png" alt="mongodb's logo" class="technology__image">
-              <p class="technology__name">MongoDB</p>
-            </a>
-          </li>
-        </ul>
       </section>
 
       <section id="projects" class="projects">
@@ -371,10 +190,201 @@
                   src="img/github.svg" alt="github's logo"></a>
             </div>
           </div>
-          <p class="projects__more center">Po więcej projektów, zapraszam na mojego <a class="projects__link"
-              href="https://github.com/Karol-Waliszewski" target="_blank">Githuba</a>!</p>
+          <!-- <p class="projects__more center">Po więcej projektów, zapraszam na mojego <a class="projects__link"
+        href="https://github.com/Karol-Waliszewski" target="_blank">Githuba</a>!</p> -->
         </div>
       </section>
+
+      <section id="skills" class="skills">
+        <div class="col">
+          <h2 class="heading">Umiejętności:</h2>
+          <hr class="line">
+        </div>
+        <dl>
+          <div class="row skill">
+            <div class="col--sm--2">
+              <div class="skill__image">
+                <img src="img/html.png" alt="Ikona HTML5" class="image">
+              </div>
+              <dt class="skill__title">
+                <a class="skill__link" target="_blank" href="https://pl.wikipedia.org/wiki/HTML">HTML</a>
+              </dt>
+            </div>
+            <div class="col--sm--10 skill__description">
+              <dd>
+                Staram się tworzyć jak najbardziej semantyczne strony, stosując się do obowiązujących standarów (HTML5)
+                oraz metodologii BEM. Przekłada się to lepsze pozycjonowanie strony w wyszukiwarkach.
+              </dd>
+            </div>
+          </div>
+          <div class="row skill">
+            <div class="col--sm--2">
+              <div class="skill__image">
+                <img src="img/css.svg" alt="Ikona CSS3" class="image" style="transform: scale(0.8)">
+              </div>
+              <dt class="skill__title">
+                <a href="https://pl.wikipedia.org/wiki/Kaskadowe_arkusze_styl%C3%B3w" class="skill__link"
+                  target="_blank">CSS</a>
+              </dt>
+            </div>
+            <div class="col--sm--10 skill__description">
+              <dd>Przy wykorzystaniu CSSa staram się tworzyć estetyczne projekty. Jestem również zaznajomiony z
+                pojęciami jak responsywność (dostosowanie układu do rozmiaru okna przeglądarki), flexbox czy grid. Do
+                usprawnienia pracy używam preprocesora o nazwie Sass.</a>
+              </dd>
+            </div>
+          </div>
+          <div class="row skill">
+            <div class="col--sm--2">
+              <div class="skill__image">
+                <img src="img/js.svg" alt="Ikona JS" class="image" style="transform: scale(0.8)">
+              </div>
+              <dt class="skill__title">
+                <a href="https://pl.wikipedia.org/wiki/JavaScript" class="skill__link" target="_blank">Javascript</a>
+              </dt>
+            </div>
+            <div class="col--sm--10 skill__description">
+              <dd>
+                Dzięki znajomości Javascriptu, oraz jego frameworków: Reacta oraz Vue, jestem w stanie robić
+                proste, jak i zaawansowane strony.
+                Oprócz wykorzystania go na stronach, stawiam na nim serwery (backend) przy użyciu Node.js.
+              </dd>
+            </div>
+          </div>
+          <div class="row skill">
+            <div class="col--sm--2">
+              <div class="skill__image">
+                <img src="img/git.png" alt="Logo Gita" class="image" style="transform: scale(0.9)">
+              </div>
+              <dt class="skill__title">
+                <a href="https://pl.wikipedia.org/wiki/Git_(oprogramowanie)" class="skill__link" target="_blank">Git</a>
+              </dt>
+            </div>
+            <div class="col--sm--10 skill__description">
+              <dd>
+                Git jest moim niezbędnikiem w trakcie projektów grupowych, ale wykorzystuję go również w 90% moich
+                projektów solowych. Pojęcia takie jak commit, branch czy merge nie są mi obce.
+              </dd>
+            </div>
+          </div>
+          <div class="row skill">
+            <div class="col--sm--2">
+              <div class="skill__image">
+                <img src="img/gulp.svg" alt="Logo Gulpa" class="image">
+              </div>
+              <dt class="skill__title">
+                <a href="https://gulpjs.com/" class="skill__link">Gulp</a>
+              </dt>
+            </div>
+            <div class="col--sm--10 skill__description">
+              <dd>
+                Stworzyłem własny <a href="https://github.com/Karol-Waliszewski/Gulp-Workflow-Template"
+                  class="link">szablon</a>,
+                którego używam przy tworzeniu stron. Dzięki niemu posiadam podgląd na żywo od razu po zapisaniu
+                pliku i minimalizuje"wagę" obrazków i innych plików.
+              </dd>
+            </div>
+          </div>
+          <div class="row skill">
+            <div class="col--sm--2">
+              <div class="skill__image">
+                <img src="img/adobe.png" alt="Logo AdobeXD" class="image">
+              </div>
+              <dt class="skill__title">
+                Grafika
+              </dt>
+            </div>
+            <div class="col--sm--10 skill__description">
+              <dd>
+                Jeżeli jest potrzeba, potrafię zrobić prosty projekt strony internetowej, ikonkę czy baner. Do tworzenia
+                grafik korzystam z Adobe Experience Design (Adobe Xd). Przykładem mojego projektu jest ta strona, a po
+                więcej zapraszam do zakładki projektów.
+              </dd>
+            </div>
+          </div>
+          <div class="row skill">
+            <div class="col--sm--2">
+              <div class="skill__image">
+                <img src="img/group.svg" alt="trzy postaci" class="image" style="transform: scale(0.8)">
+              </div>
+              <dt class="skill__title">Praca w grupie</dt>
+            </div>
+            <div class="col--sm--10 skill__description">
+              <dd>
+                Jestem osobą otwartą i towarzyską. Praca w grupie motywuje mnie do działań jeszcze
+                bardziej niż praca samemu. Lubię prowadzić dyskusje na temat najlepszego rozwiązania, słuchać o
+                pomysłach innych jak i proponować własne rozwiązania.
+              </dd>
+            </div>
+          </div>
+        </dl>
+      </section>
+
+      <section id="technologies" class="technologies">
+        <div class="col">
+          <h2 class="heading">Technologie:</h2>
+          <hr class="line">
+        </div>
+        <ul class="row--center technologies__list">
+
+          <li class="technology col--sm--4 col--xs--6">
+            <a href="https://reactjs.org/" target="_blank" class="technology__link">
+              <img src="img/logos/react.png" alt="React's logo" class="technology__image">
+              <p class="technology__name">React</p>
+            </a>
+          </li>
+          <li class="technology col--sm--4 col--xs--6">
+            <a href="https://vuejs.org/" target="_blank" class="technology__link"><img src="img/logos/vue.png"
+                alt="Vue's logo" class="technology__image">
+              <p class="technology__name">Vue</p>
+            </a>
+          </li>
+          <li class="technology col--sm--4 col--xs--6">
+            <a href="https://nodejs.org/" target="_blank" class="technology__link">
+              <img src="img/logos/node.png" alt="node.js' logo" class="technology__image">
+              <p class="technology__name">Node.js</p>
+            </a>
+          </li>
+          <li class="technology col--sm--4 col--xs--6">
+            <a href="http://es6-features.org/#Constants" target="_blank" class="technology__link">
+              <img src="img/logos/es6.png" alt="es6's logo" class="technology__image">
+              <p class="technology__name">ECMAScript 6</p>
+            </a>
+          </li>
+          <li class="technology col--sm--4 col--xs--6">
+            <a href="https://jquery.com/" target="_blank" class="technology__link">
+              <img src="img/logos/jquery.png" alt="jquery's logo" class="technology__image">
+              <p class="technology__name">JQuery</p>
+            </a>
+          </li>
+          <li class="technology col--sm--4 col--xs--6">
+            <a href="https://sass-lang.com/" target="_blank" class="technology__link">
+              <img src="img/logos/sass.png" alt="sass' logo" class="technology__image">
+              <p class="technology__name">Sass</p>
+            </a>
+          </li>
+          <li class="technology col--sm--4 col--xs--6">
+            <a href="https://getbootstrap.com/" target="_blank" class="technology__link">
+              <img src="img/logos/bootstrap.png" alt="bootstrap's logo" class="technology__image">
+              <p class="technology__name">Bootstrap</p>
+            </a>
+          </li>
+          <li class="technology col--sm--4 col--xs--6">
+            <a href="https://en.wikipedia.org/wiki/SQL" target="_blank" class="technology__link">
+              <img src="img/logos/sql.png" alt="sql's logo" class="technology__image">
+              <p class="technology__name">SQL</p>
+            </a>
+          </li>
+          <li class="technology col--sm--4 col--xs--6">
+            <a href="https://www.mongodb.com/" target="_blank" class="technology__link">
+              <img src="img/logos/mongodb.png" alt="mongodb's logo" class="technology__image">
+              <p class="technology__name">MongoDB</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+
     </main>
 
     <footer id="contact" class="contact row--middle">

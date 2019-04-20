@@ -17,7 +17,9 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  -webkit-appearance: none;
 }
+
 @media only screen and (max-width: 767px) {
   html {
     font-size: 15px;
@@ -35,6 +37,7 @@
     left: auto;
     right: auto;
   }
+
   align-self: center;
 }
 
@@ -53,7 +56,8 @@
 }
 
 .wrapper {
-  @media only screen and (min-width: 769px) {
+  overflow: hidden;
+  @media only screen and (min-width: 1100px) {
     margin-top: 75px;
     margin-bottom: 100px;
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
@@ -62,6 +66,7 @@
 
 .content {
   padding: 0 1.5rem;
+
   @media only screen and (max-width: 769px) {
     padding: 0 1rem;
   }
@@ -69,7 +74,7 @@
 
 .heading {
   font-size: 40/16 * 1rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .link {
@@ -81,8 +86,12 @@
   bottom: 2%;
   right: 2%;
   background: $primary-color;
-  width: 40px;
-  height: 40px;
+  width: 2vw;
+  height: 2vw;
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 60px;
+  max-height: 60px;
   border: none;
   cursor: pointer;
   transition: 250ms;
@@ -106,10 +115,6 @@
     width: 60%;
     transform: rotate(180deg);
   }
-  @media only screen and (max-width: 768px) {
-    width: 35px;
-    height: 35px;
-  }
 }
 
 p {
@@ -117,5 +122,5 @@ p {
 }
 
 b {
-  font-weight: 600;
+  font-weight: 500;
 }
