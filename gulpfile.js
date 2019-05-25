@@ -71,7 +71,7 @@ var jsBuild = () => {
 };
 
 var html = () => {
-  return gulp.src(`${srcDir}/*.+(html|pdf)`).pipe(gulp.dest(distDir));
+  return gulp.src(`${srcDir}/*.*`).pipe(gulp.dest(distDir));
 };
 
 var fonts = () => {
