@@ -71,7 +71,7 @@ var jsBuild = () => {
 };
 
 var html = () => {
-  return gulp.src(`${srcDir}/*.html`).pipe(gulp.dest(distDir));
+  return gulp.src(`${srcDir}/*.+(html|pdf)`).pipe(gulp.dest(distDir));
 };
 
 var fonts = () => {
@@ -128,7 +128,7 @@ var setBuild = cb => {
 };
 
 const copy = gulp.parallel(html, fonts, img);
-const dev = gulp.series(gulp.parallel(cssDev, jsDev, html), server, watch);
+const dev = gulp.series(gulp.parallel(cssDev, jsDev, copy), server, watch);
 const build = gulp.series(setBuild, gulp.parallel(cssBuild, jsBuild, copy));
 
 exports.copy = copy;
