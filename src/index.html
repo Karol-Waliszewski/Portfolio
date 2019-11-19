@@ -2,6 +2,17 @@
 <html lang="pl">
 
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146768732-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-146768732-1');
+  </script>
+
   <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Karol Waliszewski | Portfolio</title>
@@ -57,15 +68,16 @@
 
     <main class="content">
       <section id="about" class="about row">
-        <div class="col--sm--4">
+        <div class="col__sm--4">
           <div class="about__image">
             <img src="img/about3.jpg" alt="Moje zdjęcie" class="image"
               style="filter: brightness(117%); transform: scale(1.2);">
           </div>
         </div>
-        <div class="col--sm--8 ">
+        <div class="col__sm--8 ">
           <div class="about__text">
-            <p>Nazywam się <strong class="about__name">Karol Waliszewski</strong>. Jestem studentem Politechniki Wrocławskiej z zamiłowaniem do
+            <p>Nazywam się <strong class="about__name">Karol Waliszewski</strong>. Jestem studentem Politechniki
+              Wrocławskiej z zamiłowaniem do
               programowania&nbsp;i&nbsp;street workoutu. </p>
             <p>Odkąd miałem dostęp do gier, wolałem je edytować, niż w nie grać, jednak przygodę stricte z
               programowaniem rozpocząłem na początku liceum. Najpierw był to C++, jednak po około połowie roku
@@ -92,8 +104,8 @@
         </div>
         <div class="row--center">
 
-          <div class="project col--sm--4">
-            <a  href="https://jumperpark.pl/" class="project__image">
+          <div class="project col__sm--4">
+            <a href="https://jumperpark.pl/" class="project__image">
               <img src="img/project-jumper.png" alt="Strona parku trampolin w Białymstoku" class="image">
             </a>
             <h3 class="project__title">Jumper Białystok</h3>
@@ -102,15 +114,15 @@
               zaprogramowanie stworzonego widoku. Strona została wykonana przy wykorzystaniu Reacta oraz wzbogacona o
               system zarządzania treścią, Flamelink.</p>
             <div class="project__buttons">
-              <a  href="https://jumperpark.pl/" class="btn--filled">Podgląd</a>
+              <a href="https://jumperpark.pl/" class="btn--filled">Podgląd</a>
               <button class="btn--outline" disabled>
                 <img src="img/github.svg" alt="github's logo">
               </button>
             </div>
           </div>
 
-          <div class="project col--sm--4">
-            <a  href="https://karol-waliszewski.github.io/Dentist-Webpage/" class="project__image">
+          <div class="project col__sm--4">
+            <a href="https://karol-waliszewski.github.io/Dentist-Webpage/" class="project__image">
               <img src="img/project-dent.jpg" alt="Główna strona projektu" class="image">
             </a>
             <h3 class="project__title">Gabinet Dentystyczny</h3>
@@ -119,15 +131,14 @@
               wybić się wyżej w wynikach wyszukiwania Google, oraz jest dostępna
               dla niewidomych.</p>
             <div class="project__buttons">
-              <a  href="https://karol-waliszewski.github.io/Dentist-Webpage/"
-                class="btn--filled">Podgląd</a>
-              <a  href="https://github.com/Karol-Waliszewski/Dentist-Webpage" class="btn--outline"><img
+              <a href="https://karol-waliszewski.github.io/Dentist-Webpage/" class="btn--filled">Podgląd</a>
+              <a href="https://github.com/Karol-Waliszewski/Dentist-Webpage" class="btn--outline"><img
                   src="img/github.svg" alt="github's logo"></a>
             </div>
           </div>
 
-          <div class="project col--sm--4">
-            <a  href="https://karol-waliszewski.github.io/pictionary.io/" class="project__image">
+          <div class="project col__sm--4">
+            <a href="https://karol-waliszewski.github.io/pictionary.io/" class="project__image">
               <img src="img/project-pictionary.png" alt="Podgląd pokoju gry" class="image">
             </a>
             <h3 class="project__title">Pictionary.io </h3>
@@ -136,15 +147,14 @@
               stworzyć pokój lub dołączyć do istniejącego. Całość została wykonana w Vue po stronie klienta, a w node.js
               z socket.io po stronie serwera.</p>
             <div class="project__buttons">
-              <a  href="https://karol-waliszewski.github.io/pictionary.io/"
-                class="btn--filled">Podgląd</a>
-              <a  href="https://github.com/Karol-Waliszewski/pictionary.io" class="btn--outline"><img
+              <a href="https://karol-waliszewski.github.io/pictionary.io/" class="btn--filled">Podgląd</a>
+              <a href="https://github.com/Karol-Waliszewski/pictionary.io" class="btn--outline"><img
                   src="img/github.svg" alt="github's logo"></a>
             </div>
           </div>
 
-          <div class="project col--sm--4">
-            <a  href="http://prasowamaker.ct8.pl/" class="project__image">
+          <div class="project col__sm--4">
+            <a href="http://prasowamaker.ct8.pl/" class="project__image">
               <img src="img/project-prasowka.jpg"
                 alt="Strona tytułowa projektu z tytułem i przyciskami do pobrania aplikacji" class="image">
             </a>
@@ -153,13 +163,13 @@
               wiadomości, kliknąć wybrany przycisk, a prasówka pojawi się w pliku gotowym do wydruku. Aplikacja została
               zbudowana w Electron.js oraz jest oparta na web scrapingu przy pomocy cheerio i request.</p>
             <div class="project__buttons">
-              <a  href="http://prasowamaker.ct8.pl/" class="btn--filled">Podgląd</a>
-              <a  href="https://github.com/Karol-Waliszewski/Prasowa-Maker" class="btn--outline"><img
+              <a href="http://prasowamaker.ct8.pl/" class="btn--filled">Podgląd</a>
+              <a href="https://github.com/Karol-Waliszewski/Prasowa-Maker" class="btn--outline"><img
                   src="img/github.svg" alt="github's logo"></a>
             </div>
           </div>
 
-          <div class="project col--sm--4">
+          <div class="project col__sm--4">
             <div class="project__image">
               <img src="img/project-workers.jpg"
                 alt="Strona tytułowa z tytułem projektu oraz autorami: Karolem Waliszewskim oraz Krzysztofem Sobolewskim"
@@ -167,18 +177,18 @@
             </div>
             <h3 class="project__title">System Rejestracji Czasu Pracy</h3>
             <p class="project__description">Wspólny projekt wykonany z <a href="https://github.com/kzsobolewski"
-                 class="link">kolegą</a>. Moją rolą było łączenie się z bazą danych poprzez serwer
+                class="link">kolegą</a>. Moją rolą było łączenie się z bazą danych poprzez serwer
               dzięki REST Api, a następnie przedstawić wizualnie pobrane dane użytkownikowi strony. Aby
               oszczędzić czas w CSS i skupić się na najważniejszym w projekcie JS z Vue, użyłem
               Bulma'e.</p>
             <div class="project__buttons">
               <button class="btn--filled" disabled>Podgląd</button>
-              <a  href="https://github.com/Karol-Waliszewski/System-Rejestracji-Czasu-Pracy-Pracownikow"
+              <a href="https://github.com/Karol-Waliszewski/System-Rejestracji-Czasu-Pracy-Pracownikow"
                 class="btn--outline"><img src="img/github.svg" alt="github's logo"></a>
             </div>
           </div>
-          <div class="project col--sm--4">
-            <a  href="https://karol-waliszewski.github.io/Donut-Clicker-PWA/" class="project__image">
+          <div class="project col__sm--4">
+            <a href="https://karol-waliszewski.github.io/Donut-Clicker-PWA/" class="project__image">
               <img src="img/project-donut.jpg" alt="Strona z pączkiem, przyciskami ulepszeń i statystykami"
                 class="image">
             </a>
@@ -187,9 +197,8 @@
               ulepszyć i udekorować go na nowo! Świetny zabijacz czasu dostępny również jako aplikacja dzięki
               technologii Progressive Web App. Całość została napisana bez wykorzystania żadnego frameworka.</p>
             <div class="project__buttons">
-              <a  href="https://karol-waliszewski.github.io/Donut-Clicker-PWA/"
-                class="btn--filled">Podgląd</a>
-              <a  href="https://github.com/Karol-Waliszewski/Donut-Clicker-PWA" class="btn--outline"><img
+              <a href="https://karol-waliszewski.github.io/Donut-Clicker-PWA/" class="btn--filled">Podgląd</a>
+              <a href="https://github.com/Karol-Waliszewski/Donut-Clicker-PWA" class="btn--outline"><img
                   src="img/github.svg" alt="github's logo"></a>
             </div>
           </div>
@@ -205,15 +214,15 @@
         </div>
         <dl>
           <div class="row skill">
-            <div class="col--sm--2">
+            <div class="col__sm--2">
               <div class="skill__image">
                 <img src="img/html.png" alt="Ikona HTML5" class="image">
               </div>
               <dt class="skill__title">
-                <a class="skill__link"  href="https://pl.wikipedia.org/wiki/HTML">HTML</a>
+                <a class="skill__link" href="https://pl.wikipedia.org/wiki/HTML">HTML</a>
               </dt>
             </div>
-            <div class="col--sm--10 skill__description">
+            <div class="col__sm--10 skill__description">
               <dd>
                 Staram się tworzyć jak najbardziej semantyczne strony, stosując się do obowiązujących standarów (HTML5)
                 oraz metodologii BEM. Przekłada się to lepsze pozycjonowanie strony w wyszukiwarkach.
@@ -221,16 +230,15 @@
             </div>
           </div>
           <div class="row skill">
-            <div class="col--sm--2">
+            <div class="col__sm--2">
               <div class="skill__image">
                 <img src="img/css.svg" alt="Ikona CSS3" class="image" style="transform: scale(0.8)">
               </div>
               <dt class="skill__title">
-                <a href="https://pl.wikipedia.org/wiki/Kaskadowe_arkusze_styl%C3%B3w" class="skill__link"
-                  >CSS</a>
+                <a href="https://pl.wikipedia.org/wiki/Kaskadowe_arkusze_styl%C3%B3w" class="skill__link">CSS</a>
               </dt>
             </div>
-            <div class="col--sm--10 skill__description">
+            <div class="col__sm--10 skill__description">
               <dd>Przy wykorzystaniu CSSa staram się tworzyć estetyczne projekty. Jestem również zaznajomiony z
                 pojęciami jak responsywność (dostosowanie układu do rozmiaru okna przeglądarki), flexbox czy grid. Do
                 usprawnienia pracy używam preprocesora o nazwie Sass.</a>
@@ -238,15 +246,15 @@
             </div>
           </div>
           <div class="row skill">
-            <div class="col--sm--2">
+            <div class="col__sm--2">
               <div class="skill__image">
                 <img src="img/js.svg" alt="Ikona JS" class="image" style="transform: scale(0.8)">
               </div>
               <dt class="skill__title">
-                <a href="https://pl.wikipedia.org/wiki/JavaScript" class="skill__link" >Javascript</a>
+                <a href="https://pl.wikipedia.org/wiki/JavaScript" class="skill__link">Javascript</a>
               </dt>
             </div>
-            <div class="col--sm--10 skill__description">
+            <div class="col__sm--10 skill__description">
               <dd>
                 Dzięki znajomości Javascriptu, oraz jego frameworków: Reacta oraz Vue, jestem w stanie robić
                 proste, jak i zaawansowane strony.
@@ -255,15 +263,15 @@
             </div>
           </div>
           <div class="row skill">
-            <div class="col--sm--2">
+            <div class="col__sm--2">
               <div class="skill__image">
                 <img src="img/git.png" alt="Logo Gita" class="image" style="transform: scale(0.9)">
               </div>
               <dt class="skill__title">
-                <a href="https://pl.wikipedia.org/wiki/Git_(oprogramowanie)" class="skill__link" >Git</a>
+                <a href="https://pl.wikipedia.org/wiki/Git_(oprogramowanie)" class="skill__link">Git</a>
               </dt>
             </div>
-            <div class="col--sm--10 skill__description">
+            <div class="col__sm--10 skill__description">
               <dd>
                 Git jest moim niezbędnikiem w trakcie projektów grupowych, ale wykorzystuję go również w 90% moich
                 projektów solowych. Pojęcia takie jak commit, branch czy merge nie są mi obce.
@@ -271,7 +279,7 @@
             </div>
           </div>
           <div class="row skill">
-            <div class="col--sm--2">
+            <div class="col__sm--2">
               <div class="skill__image">
                 <img src="img/gulp.svg" alt="Logo Gulpa" class="image">
               </div>
@@ -279,7 +287,7 @@
                 <a href="https://gulpjs.com/" class="skill__link">Gulp</a>
               </dt>
             </div>
-            <div class="col--sm--10 skill__description">
+            <div class="col__sm--10 skill__description">
               <dd>
                 Stworzyłem własny <a href="https://github.com/Karol-Waliszewski/Gulp-Workflow-Template"
                   class="link">szablon</a>,
@@ -289,7 +297,7 @@
             </div>
           </div>
           <div class="row skill">
-            <div class="col--sm--2">
+            <div class="col__sm--2">
               <div class="skill__image">
                 <img src="img/adobe.png" alt="Logo AdobeXD" class="image">
               </div>
@@ -297,22 +305,23 @@
                 Grafika
               </dt>
             </div>
-            <div class="col--sm--10 skill__description">
+            <div class="col__sm--10 skill__description">
               <dd>
                 Jeżeli jest potrzeba, potrafię zrobić prosty projekt strony internetowej, ikonkę czy baner. Do tworzenia
-                UI korzystam z Adobe Experience Design (Adobe Xd). Przykładem mojego autorskiego projektu jest ta strona, a po
+                UI korzystam z Adobe Experience Design (Adobe Xd). Przykładem mojego autorskiego projektu jest ta
+                strona, a po
                 więcej zapraszam do zakładki projektów.
               </dd>
             </div>
           </div>
           <div class="row skill">
-            <div class="col--sm--2">
+            <div class="col__sm--2">
               <div class="skill__image">
                 <img src="img/group.svg" alt="trzy postaci" class="image" style="transform: scale(0.8)">
               </div>
               <dt class="skill__title">Praca w grupie</dt>
             </div>
-            <div class="col--sm--10 skill__description">
+            <div class="col__sm--10 skill__description">
               <dd>
                 Jestem osobą otwartą i towarzyską. Praca w grupie motywuje mnie do działań jeszcze
                 bardziej niż praca samemu. Lubię prowadzić dyskusje na temat najlepszego rozwiązania, słuchać o
@@ -330,56 +339,56 @@
         </div>
         <ul class="row--center technologies__list">
 
-          <li class="technology col--sm--4 col--xs--6">
-            <a href="https://reactjs.org/"  class="technology__link">
+          <li class="technology col__sm--4 col__xs--6">
+            <a href="https://reactjs.org/" class="technology__link">
               <img src="img/logos/react.png" alt="React's logo" class="technology__image">
               <p class="technology__name">React</p>
             </a>
           </li>
-          <li class="technology col--sm--4 col--xs--6">
-            <a href="https://vuejs.org/"  class="technology__link"><img src="img/logos/vue.png"
-                alt="Vue's logo" class="technology__image">
-              <p class="technology__name">Vue</p>
-            </a>
-          </li>
-          <li class="technology col--sm--4 col--xs--6">
-            <a href="https://redux.js.org/"  class="technology__link">
+          <li class="technology col__sm--4 col__xs--6">
+            <a href="https://redux.js.org/" class="technology__link">
               <img src="img/logos/redux.png" alt="jquery's logo" class="technology__image">
               <p class="technology__name">Redux</p>
             </a>
           </li>
-          <li class="technology col--sm--4 col--xs--6">
-            <a href="https://nodejs.org/"  class="technology__link">
+          <li class="technology col__sm--4 col__xs--6">
+            <a href="https://vuejs.org/" class="technology__link"><img src="img/logos/vue.png" alt="Vue's logo"
+                class="technology__image">
+              <p class="technology__name">Vue</p>
+            </a>
+          </li>
+          <li class="technology col__sm--4 col__xs--6">
+            <a href="https://nodejs.org/" class="technology__link">
               <img src="img/logos/node.png" alt="node.js' logo" class="technology__image">
               <p class="technology__name">Node.js</p>
             </a>
           </li>
-          <li class="technology col--sm--4 col--xs--6">
-            <a href="http://es6-features.org/#Constants"  class="technology__link">
+          <li class="technology col__sm--4 col__xs--6">
+            <a href="http://es6-features.org/#Constants" class="technology__link">
               <img src="img/logos/es6.png" alt="es6's logo" class="technology__image">
               <p class="technology__name">ECMAScript 6</p>
             </a>
           </li>
-          <li class="technology col--sm--4 col--xs--6">
-            <a href="https://sass-lang.com/"  class="technology__link">
+          <li class="technology col__sm--4 col__xs--6">
+            <a href="https://sass-lang.com/" class="technology__link">
               <img src="img/logos/sass.png" alt="sass' logo" class="technology__image">
               <p class="technology__name">Sass</p>
             </a>
           </li>
-          <li class="technology col--sm--4 col--xs--6">
-            <a href="https://bulma.io"  class="technology__link">
+          <li class="technology col__sm--4 col__xs--6">
+            <a href="https://bulma.io" class="technology__link">
               <img src="img/logos/bulma.png" alt="bulma's logo" class="technology__image">
               <p class="technology__name">Bulma</p>
             </a>
           </li>
-          <li class="technology col--sm--4 col--xs--6">
-            <a href="https://en.wikipedia.org/wiki/SQL"  class="technology__link">
+          <li class="technology col__sm--4 col__xs--6">
+            <a href="https://en.wikipedia.org/wiki/SQL" class="technology__link">
               <img src="img/logos/sql.png" alt="sql's logo" class="technology__image">
               <p class="technology__name">SQL</p>
             </a>
           </li>
-          <li class="technology col--sm--4 col--xs--6">
-            <a href="https://www.mongodb.com/"  class="technology__link">
+          <li class="technology col__sm--4 col__xs--6">
+            <a href="https://www.mongodb.com/" class="technology__link">
               <img src="img/logos/mongodb.png" alt="mongodb's logo" class="technology__image">
               <p class="technology__name">MongoDB</p>
             </a>
@@ -391,20 +400,20 @@
     </main>
 
     <footer id="contact" class="contact row--middle">
-      <div class="col--md--8">
+      <div class="col__md--8">
         <h2 class="heading col">Kontakt</h2>
         <form class="row" id="contactForm">
-          <div class="col--md--6">
+          <div class="col__md--6">
             <label for="name" class="contact__label">Imię:</label>
             <input name="name" type="text" class="contact__input" id="name" placeholder="Jan Kowalski" />
             <span class="contact__error">Podaj imię.</span>
           </div>
-          <div class="col--md--6">
+          <div class="col__md--6">
             <label for="email" class="contact__label">Email:</label>
             <input name="email" type="email" class="contact__input" id="email" placeholder="jankowalski@gmail.com" />
             <span class="contact__error">Podaj poprawny adres email.</span>
           </div>
-          <div class="col--md--12">
+          <div class="col__md--12">
             <label for="message" class="contact__label--textarea">Treść:</label>
             <textarea id="message" name="message" class="contact__textarea" placeholder="Przywitaj się :)"></textarea>
             <span class="contact__error">Dodaj treść wiadomości.</span>
@@ -412,7 +421,7 @@
           <input type="submit" id="submit" class="btn--contact center" value="Wyślij" />
         </form>
       </div>
-      <div class="col--md--4">
+      <div class="col__md--4">
       </div>
     </footer>
   </div>

@@ -53,7 +53,7 @@ $grid-breakpoints: xs 576px, sm 768px, md 992px, lg 1200px;
   }
 }
 @for $i from 1 through $grid-columns {
-  .col--#{$i} {
+  .col__#{$i} {
     @extend .col;
     flex: $i;
     @media only screen and (min-width: nth(nth($grid-breakpoints,1),2)) {
@@ -66,7 +66,7 @@ $grid-breakpoints: xs 576px, sm 768px, md 992px, lg 1200px;
   $name: nth($breakpoint,1);
   $gap: nth($breakpoint,2);
   @for $i from 1 through $grid-columns {
-    .col--#{$name}--#{$i} {
+    .col__#{$name}--#{$i} {
       @extend .col;
 
       @if $name == 'xs' {
