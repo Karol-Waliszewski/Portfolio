@@ -143,7 +143,7 @@
   };
 
   var sendMessage = function() {
-    let service_id = "lolekappa";
+    let service_id = "$2y$12$E15cdUVZC4XuPoWdRTqsLeR7OUzJlSXf3WXTpBJKfUvSsJEyl5p3G";
     let template_id = "template_da8gZu7J";
 
     let params = {
