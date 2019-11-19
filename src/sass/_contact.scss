@@ -4,6 +4,7 @@
   position: relative;
   padding: 2rem 0;
   overflow: hidden;
+
   @media only screen and (min-width: 992px) {
     &::before {
       content: "";
@@ -30,7 +31,8 @@
     @extend .contact__label;
     margin-top: 12px;
   }
-  @media only screen and (max-width: 768px){
+
+  @media only screen and (max-width: 768px) {
     margin-top: 12px;
     margin-bottom: 6px;
   }
@@ -83,12 +85,14 @@
   transition: 250ms;
   position: relative;
   -webkit-appearance: none;
+
   &::placeholder {
     color: $text-color;
     opacity: 0.8;
   }
-  & ~ .contact__error {
-    margin-top: -0.8rem;
+
+  &~.contact__error {
+    margin-top: -0.5rem;
   }
 
   &:focus {
@@ -115,8 +119,18 @@
   display: block;
   margin-top: 3px;
 
+  &--submit {
+    @extend .contact__error;
+    max-height: 0;
+    &.active {
+      position: relative;
+      max-height: 300px;
+    }
+  }
+
   &.active {
     visibility: visible;
     opacity: 100;
   }
+
 }

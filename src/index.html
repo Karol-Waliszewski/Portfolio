@@ -418,7 +418,11 @@
             <textarea id="message" name="message" class="contact__textarea" placeholder="Przywitaj się :)"></textarea>
             <span class="contact__error">Dodaj treść wiadomości.</span>
           </div>
-          <input type="submit" id="submit" class="btn--contact center" value="Wyślij" />
+          <div class="col__md--12">
+            <span class="contact__error--submit" id="submitError">Wystąpił problem podczas wysyłania wiadomości. Proszę spróbować ponownie później.</span>
+            <input type="submit" id="submit" class="btn--contact center" value="Wyślij" />
+          </div>
+
         </form>
       </div>
       <div class="col__md--4">
