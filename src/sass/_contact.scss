@@ -112,6 +112,8 @@
   opacity: 0;
   transition: 300ms;
   visibility: hidden;
+  display: block;
+  margin-top: 3px;
 
   &.active {
     visibility: visible;
